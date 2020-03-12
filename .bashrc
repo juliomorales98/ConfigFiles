@@ -148,3 +148,9 @@ fi
 
 #Netbeans
 export PATH="/opt/netbeans/bin/:$PATH"
+
+#Processing
+export PATH="/opt/processing-3.5.4/:$PATH"
+
+#Daily fortune
+fortune | cowsay -f turtle | lolcat
