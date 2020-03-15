@@ -1,0 +1,4 @@
+[battery]
+label=Battery
+interval=10
+command=/usr/share/i3blocks/battery
