@@ -7,8 +7,10 @@ case $doit in
   *) echo dont know ;; 
 esac
 
+cp i3/i3blocks.conf $HOME/.config/i3/
+
 read -n1 -p "Laptop? [y|n]: " doit
 case $doit in
-	y|Y) cat i3/LaptopAdd >> $HOME/.config/i3/i3blocks.conf ;;
+	y|Y) cat i3/BatteryLaptop >> $HOME/.config/i3/i3blocks.conf && cat i3/BrightnessLaptop >> $HOME/.config/i3/config ;;
 	*) ;;
 esac
