@@ -139,10 +139,13 @@ assign [class="Terminator"] $workspace1
 assign [class="Code"] $workspace3
 assign [class="jade-Boot"] $workspace3
 assign [class="Spotify"] $workspace4
-assign [class="Thunar"] $workspace2
 assign [class="discord"] $workspace5
 assign [class="retroarch"] $workspace6
 assign [class="Steam"] $workspace6
+
+#move workspaces to other monitors
+bindsym $mod+Shift+m move workspace to output right
+bindsym $mod+Shift+n move workspace to output left
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -150,6 +153,8 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+# suspends computer
+bindsym $mod+Shift+s exec "systemctl suspend"
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -211,7 +216,7 @@ bar {
 }
 
 #wallpaper
-exec_always feh --bg-scale /home/julio/Pictures/MintWallpaper.png
+exec_always feh --bg-scale /home/julio/Pictures/WallpaperLight.jpg
 
 #Compton
 exec compton -f
@@ -226,6 +231,6 @@ bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute s
 
 #Media keys
 bindsym XF86AudioPlay exec playerctl play
-bindsym XF86AudioPause exec playerctl pause
+bindsym XF86AudioStop exec playerctl pause
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
