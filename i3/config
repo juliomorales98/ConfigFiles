@@ -224,6 +224,9 @@ exec compton -f
 #Execute terminator when login
 exec terminator
 
+#screenshoter
+bindsym Print exec xfce4-screenshooter
+
 #Volume keys with pulse audio
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% #decrease sound volume
