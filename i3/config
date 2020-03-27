@@ -219,7 +219,7 @@ bar {
 exec_always feh --bg-scale /home/julio/Pictures/WallpaperLight.jpg
 
 #Compton
-exec compton -f
+#exec compton -f
 
 #Execute terminator when login
 exec terminator
