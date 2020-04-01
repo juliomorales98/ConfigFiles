@@ -93,17 +93,11 @@ bindsym $mod+a focus parent
 #bindsym $mod+d focus child
 
 #Workspaces variables
-#terminals
-set $workspace1 "1 " 
-#music
-set $workspace2 "2 " 
-#programming
-set $workspace3 "3 " 
-#windows
-set $workspace4 "4 "  
-#discord
+set $workspace1 "1" 
+set $workspace2 "2" 
+set $workspace3 "3" 
+set $workspace4 "4"  
 set $workspace5 "5" 
-#gaming
 set $workspace6 "6" 
 set $workspace7 "7"
 set $workspace8 "8"
@@ -146,6 +140,11 @@ assign [class="Steam"] $workspace6
 #move workspaces to other monitors
 bindsym $mod+Shift+m move workspace to output right
 bindsym $mod+Shift+n move workspace to output left
+
+#my title bar configuration
+new_window none
+new_float none
+focus_on_window_activation focus
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -219,7 +218,7 @@ bar {
 exec_always feh --bg-scale /home/julio/Pictures/WallpaperLight.jpg
 
 #Compton
-#exec compton -f
+exec compton -f
 
 #Execute terminator when login
 exec terminator
