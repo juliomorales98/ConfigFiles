@@ -129,7 +129,7 @@ bindsym $mod+Shift+9 move container to workspace $workspace9
 bindsym $mod+Shift+0 move container to workspace $workspace10
 
 #defining classes for each workspace
-assign [class="Terminator"] $workspace1
+#assign [class="Terminator"] $workspace1
 assign [class="Code"] $workspace3
 assign [class="jade-Boot"] $workspace3
 assign [class="Spotify"] $workspace4
