@@ -130,12 +130,12 @@ bindsym $mod+Shift+0 move container to workspace $workspace10
 
 #defining classes for each workspace
 #assign [class="Terminator"] $workspace1
-assign [class="Code"] $workspace3
-assign [class="jade-Boot"] $workspace3
-assign [class="Spotify"] $workspace4
-assign [class="discord"] $workspace5
-assign [class="retroarch"] $workspace6
-assign [class="Steam"] $workspace6
+assign [class="Code"] $workspace4
+assign [class="jade-Boot"] $workspace4
+assign [class="Spotify"] $workspace6
+assign [class="discord"] $workspace7
+assign [class="retroarch"] $workspace8
+assign [class="Steam"] $workspace9
 
 #move workspaces to other monitors
 bindsym $mod+Shift+m move workspace to output right
