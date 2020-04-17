@@ -135,12 +135,15 @@ assign [class="jade-Boot"] $workspace4
 assign [class="Spotify"] $workspace6
 assign [class="discord"] $workspace7
 assign [class="retroarch"] $workspace8
-assign [class="Steam"] $workspace9
+assign [class="Steam"] $workspace8
 
 #move workspaces to other monitors
 bindsym $mod+Shift+m move workspace to output right
 bindsym $mod+Shift+n move workspace to output left
 
+#my caps keys
+bindsym --release Caps_Lock exec pkill -SIGRTMIN+11 i3blocks
+bindsym --release Num_Lock  exec pkill -SIGRTMIN+11 i3blocks
 #my title bar configuration
 new_window none
 new_float none
@@ -183,6 +186,8 @@ bindsym $mod+r mode "resize"
 
 #hide edges
 #hide_edge_borders both
+
+
 
 #colors
 set $bg-color 	         #2f343f
