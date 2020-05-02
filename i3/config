@@ -148,7 +148,7 @@ bindsym --release Num_Lock  exec pkill -SIGRTMIN+11 i3blocks
 #my title bar configuration
 new_window none
 new_float none
-focus_on_window_activation focus
+#focus_on_window_activation focus
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -157,9 +157,10 @@ bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 # suspends computer
-bindsym $mod+Shift+s exec "systemctl suspend"
+bindsym $mod+Shift+p exec "systemctl suspend"
 
 # resize window (you can also use the mouse for that)
+bindsym $mod+r mode "resize"
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
 
@@ -183,7 +184,6 @@ mode "resize" {
         bindsym Escape mode "default"
 }
 
-bindsym $mod+r mode "resize"
 
 #hide edges
 #hide_edge_borders both
@@ -217,7 +217,7 @@ bar {
 }
 
 #wallpaper
-exec_always feh --bg-scale /home/julio/Pictures/WallpaperLight.jpg
+exec_always feh --bg-scale /home/julio/Imágenes/Wallpaper.png
 
 #Compton
 exec compton -f 
