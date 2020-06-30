@@ -1,0 +1,6 @@
+#!/bin/bash
+echo "[Montando Disco...]"
+sudo ntfs-3g  /dev/sdb2 /home/julio/"DiscoDuro" -o uid=1000,gid=1000
+
+echo "[Actualizando reositorios...]"
+sudo pacman -Syu

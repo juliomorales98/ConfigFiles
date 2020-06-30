@@ -1,0 +1,2 @@
+#!/bin/bash
+sudo ntfs-3g  /dev/sdb2 /home/julio/"DiscoDuro" -o uid=1000,gid=1000
